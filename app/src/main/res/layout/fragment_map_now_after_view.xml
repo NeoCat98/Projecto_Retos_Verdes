@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.MapNowAfterViewFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_margin="@dimen/ll_margin"
+                  android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:layout_marginTop="@dimen/ll_margin"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_margin="@dimen/ll_margin"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:id="@+id/img_select_now_view"
+                           android:src="@drawable/ic_launcher_background"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="Now"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_marginBottom="@dimen/ll_margin"
+                          android:layout_marginRight="@dimen/ll_margin"
+                          android:layout_marginTop="@dimen/ll_margin"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:id="@+id/img_select_after_view"
+                           android:src="@drawable/ic_launcher_background"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="After"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/ll_margin"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_margin="@dimen/text_margin"
+                      android:text="Place Name:"
+                      android:layout_height="wrap_content"/>
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_marginTop="@dimen/text_margin"
+                      android:layout_weight="0.9"
+                      android:id="@+id/place_name_map_now_after"
+                      android:hint="San Felipe Park"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/ll_margin"
+                      android:layout_marginBottom="@dimen/ll_margin"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_margin="@dimen/text_margin"
+                      android:text="Description:"
+                      android:layout_height="wrap_content"/>
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_marginTop="@dimen/text_margin"
+                      android:layout_weight="0.9"
+                      android:id="@+id/description_place_map_now_after"
+                      android:hint="Description of the place ..."
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button android:layout_width="wrap_content"
+                android:layout_margin="@dimen/btn_margin"
+                android:layout_gravity="end"
+                android:text="save and go back"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

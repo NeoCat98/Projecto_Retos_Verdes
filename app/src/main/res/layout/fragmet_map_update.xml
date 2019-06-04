@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.MapUpdateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+            <ImageButton android:layout_width="match_parent"
+                         android:id="@+id/btn_location_map_update"
+                         android:layout_margin="@dimen/btn_margin"
+                         android:src="@drawable/ic_location_on_black_24dp"
+                         android:layout_height="wrap_content"/>
+
+            <view android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+
+            <ImageButton android:layout_width="match_parent"
+                         android:id="@+id/btn_brush_map_update"
+                         android:layout_margin="@dimen/btn_margin"
+                         android:src="@drawable/ic_brush_black_24dp"
+                         android:layout_height="wrap_content"/>
+
+            <view android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+
+            <ImageButton android:layout_width="match_parent"
+                         android:id="@+id/btn_help_map_update"
+                         android:layout_gravity="bottom"
+                         android:layout_margin="@dimen/btn_margin"
+                         android:src="@drawable/ic_help_black_24dp"
+                         android:layout_height="wrap_content"/>
+
+            <view android:layout_width="match_parent"
+                  android:layout_height="1dp"/>
+
+            <Button android:layout_width="wrap_content"
+                    android:text="FINISH"
+                    android:layout_margin="@dimen/btn_margin"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:id="@+id/ll_map_image_update"
+                      android:background="@drawable/ic_launcher_background"
+                      android:layout_weight="0.7"
+                      android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
